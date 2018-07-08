@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="examenXamarin.Views.MainView"
+    BackgroundColor="Green"
+    BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <ContentPage.Content>
+        <StackLayout Padding="50">
+            <Label 
+                FontAttributes="Bold"
+                FontSize="Large"
+                TextColor="White"
+                Text="My App"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center">
+            </Label>
+
+            <StackLayout Padding="20" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Green" Orientation="Horizontal" >
+
+                <Image Source="icon_user.png" WidthRequest="25" VerticalOptions="Center"/>
+                <Entry x:Name="entEmail"
+                        MaxLength="15"
+                        Keyboard="Email"
+                        Placeholder="Email Adress"
+                        TextColor="White"> 
+
+                </Entry>
+
+            </StackLayout>
+
+            <StackLayout Padding="5" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Green" Orientation="Horizontal" >
+
+                <Image Source="icon_pass.png"  WidthRequest="25" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Entry x:Name="entPass"
+                        MaxLength="8"
+                        IsPassword="True"
+                        Placeholder="Password"
+                       TextColor="White">
+
+                </Entry>
+
+            </StackLayout>
+           
+            <Button x:Name="btnLogin"
+                BackgroundColor="White"
+                TextColor="Green"
+                BorderRadius="20"
+                HeightRequest="40"
+                Text="Login">
+                
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
