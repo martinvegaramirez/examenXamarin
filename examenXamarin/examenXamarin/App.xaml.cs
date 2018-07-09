@@ -1,4 +1,3 @@
-using examenXamarin.Pages;
 using System;
 using Xamarin.Forms.Xaml;
 
@@ -15,10 +14,11 @@ namespace examenXamarin
 		{
 			InitializeComponent();
 
-			MainPage = new MainView();
-		}
+            //MainPage = new MainView();
+            MainPage = new MainView();
+        }
 
-		protected override void OnStart ()
+        protected override void OnStart ()
 		{
 			// Handle when your app starts
 		}
