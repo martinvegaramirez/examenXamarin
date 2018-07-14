@@ -1,7 +1,9 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
+namespace examenXamarin.Models
+{
     public class Name
     {
         public string title { get; set; }
@@ -26,7 +28,7 @@ using System.Collections.Generic;
         public string street { get; set; }
         public string city { get; set; }
         public string state { get; set; }
-        public int postcode { get; set; }
+        public string postcode { get; set; }
         public Coordinates coordinates { get; set; }
         public Timezone timezone { get; set; }
     }
@@ -91,10 +93,9 @@ using System.Collections.Generic;
         public string version { get; set; }
     }
 
-public class UserApi
-{
-    public List<Result> results { get; set; }
-    public Info info { get; set; }
-
-
+    public class RootObject
+    {
+        public List<Result> results { get; set; }
+        public Info info { get; set; }
+    }
 }

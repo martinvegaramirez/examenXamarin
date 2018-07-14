@@ -20,14 +20,10 @@ namespace examenXamarin.ViewModels
         private async void Start()
         {
 
-            var usersApi = await apiService.GetAllOrders();
+            var userApi = await apiService.GetUser();
 
 
-            foreach (var user in usersApi)
-            { 
-
-                
-            }
+           
 
         }
 

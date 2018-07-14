@@ -3,10 +3,11 @@ using System;
 
 namespace examenXamarin.Models
 {
-    class Medico
+    public class Medico
     {
         [PrimaryKey, AutoIncrement]
         public string imageUrl { get; set; }
+        [Unique]
         public string fullname { get; set; }
         public string rating { get; set; }
         public string email { get; set; }
@@ -17,11 +18,6 @@ namespace examenXamarin.Models
         public string telephone { get; set; }
         public string lat { get; set; }
         public string lon { get; set; }
-
-        public override string ToString()
-        {
-            return string.Format("{0} {1} {3} {4}", imageUrl, email, fullname, rating);
-        }
 
     }
 }

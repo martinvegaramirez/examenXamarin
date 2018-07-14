@@ -10,7 +10,7 @@ namespace examenXamarin.Services
 {
     public class ApiService
     {
-        public async Task<List<UserApi>> GetAllOrders()
+        public async Task<RootObject> GetUser()
         {
            try
             {
@@ -18,18 +18,19 @@ namespace examenXamarin.Services
                 client.BaseAddress = new Uri("https://randomuser.me");
                 var url = "/api/";
                 var response = await client.GetAsync(url);
+                var result = await response.Content.ReadAsStringAsync();
                 if (!response.IsSuccessStatusCode)
                 {
-                    return new List<UserApi>();
+                    return new RootObject();
                     await DisplayAlert("Error", "No hay conexion", "Aceptar");
                 }
 
-                var result = await response.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<List<UserApi>>(result);
+                var ro = JsonConvert.DeserializeObject<RootObject>(result);
+                return ro;
             }
             catch
             {
-                return new List<UserApi>();
+                return new RootObject();
             }
         }
 
