@@ -10,6 +10,7 @@ namespace examenXamarin.Models
         public string rating { get; set; }
         public string email { get; set; }
         public string street { get; set; }
+        public string city { get; set; }
         public string state { get; set; }
         public string postalcode { get; set; }
         public string telephone { get; set; }
@@ -25,6 +26,7 @@ namespace examenXamarin.Models
                           rating="4.5",
                           email= "sofie.rasmussen@example.com",
                           street= "8865 kaj munks vej",
+                           city= "Nicolas Romero",
                             state = "Estado de Mexico",
                             postalcode ="55880",
                             telephone = "55.5546.7899",
@@ -37,6 +39,7 @@ namespace examenXamarin.Models
                          rating="4.6",
                          email= "lee.austin@example.com",
                          street= "1582 hillcrest rd",
+                           city= "Nicolas Romero",
                         state = "Estado de Mexico",
                         postalcode ="55880",
                         telephone = "55.5546.7899",
@@ -49,6 +52,7 @@ namespace examenXamarin.Models
                          rating="4.6",
                          email= "norival.castro@example.com",
                          street= "4119 rua dezenove de outubro",
+                           city= "Nicolas Romero",
                         state = "rio de janeiro",
                         postalcode ="86062",
                         telephone = "(93) 7572-91549",

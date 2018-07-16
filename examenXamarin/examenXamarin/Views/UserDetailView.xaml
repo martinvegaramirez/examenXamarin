@@ -10,11 +10,19 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,10,0,0" Grid.Row="0">
+
+            <StackLayout Grid.Row="0" Orientation="Horizontal" >
+                <Image Source="{Binding imageUrl}" HeightRequest="70" VerticalOptions="EndAndExpand"/>
+                <StackLayout Orientation="Vertical">
+                    <Label TextColor="Black" FontAttributes="Bold" Text="{Binding fullname}" />
+                    <Label TextColor="Green" FontAttributes="None" Text="{Binding email}"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="{}"
+                        
+                    </StackLayout>
 
 
-                <Label Text="@XamarinGuy"/>
-                <Image Source="mediaw.png" Opacity="0.6" VerticalOptions="Start" Margin="0,3,0,0"/>
+                </StackLayout>
 
             </StackLayout>
 
@@ -28,11 +36,7 @@
                    
 
                 </Grid.RowDefinitions>
-                <StackLayout Grid.Row="0" Orientation="Horizontal" >
-                    <Image Source="Samir.png" HeightRequest="70" VerticalOptions="EndAndExpand"/>
-                    
-                    
-                </StackLayout>
+
                 
                 <Image Source="Samir.png" HeightRequest="70" VerticalOptions="EndAndExpand"/>
                 <Entry Grid.Row="1" Placeholder="Email or Phone Number" PlaceholderColor="#bababa" FontSize="16"/>

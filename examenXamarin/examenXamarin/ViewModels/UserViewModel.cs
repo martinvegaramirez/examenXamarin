@@ -121,6 +121,7 @@ namespace examenXamarin.ViewModels
                     rating = rating.ToString(),
                     email = userApi.results[0].email,
                     street = userApi.results[0].location.street,
+                    city = userApi.results[0].location.city,
                     state = userApi.results[0].location.state,
                     postalcode = userApi.results[0].location.postcode,
                     telephone = userApi.results[0].phone,
