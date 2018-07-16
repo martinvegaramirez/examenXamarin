@@ -13,16 +13,13 @@ namespace examenXamarin
 	{
         public static NavigationPage Navigator { get; internal set; }
 
-        List<User> Users { get; set; }
-        User user { get; set; }
+
         public App ()
 		{
 			InitializeComponent();
 
-            //MainPage = new MainView();
-            user = new User();
-            Users = user.GetUsers();
-            MainPage = new UserDetailView(Users[0]);
+
+            MainPage = new UserDetailView( );
         }
 
         protected override void OnStart ()

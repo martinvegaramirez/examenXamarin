@@ -26,7 +26,7 @@ namespace examenXamarin.Views
 
         private async void listUsers_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            await Navigation.PushAsync(new NavigationPage(new UserDetailView((Medico)e.SelectedItem)));
+           // await Navigation.PushAsync(new NavigationPage(new UserDetailView((Medico)e.SelectedItem)));
         }
 
     
