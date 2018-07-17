@@ -53,6 +53,7 @@ namespace examenXamarin.UWP
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
                 Xamarin.Forms.Forms.Init(e);
+                Xamarin.FormsMaps.Init("AIzaSyA-HXVa2jtkGfKtIJwisxgC46RaWqC1xuI");
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {

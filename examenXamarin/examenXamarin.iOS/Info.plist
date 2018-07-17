@@ -34,5 +34,12 @@
 	<string>examenXamarin</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>Tipo de documento 1</string>
+		</dict>
+	</array>
 </dict>
 </plist>
